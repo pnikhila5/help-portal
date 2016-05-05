@@ -1,0 +1,27 @@
+@(id: Long, computerForm: Form[Provider])
+
+@import helper._
+
+@implicitFieldConstructor = @{ FieldConstructor(twitterBootstrapInput.render) } 
+
+@main {
+    
+    <h1>Provide feedback for your provider after the session. We use this feedback to help better matching in the future!</h1>
+    
+    @form(routes.Application.update(id)) {
+        
+        <fieldset>
+        
+            @inputText(computerForm("feedback"), '_label -> "Feedback", '_help -> "")
+            @inputText(computerForm("rating"), '_label -> "Your rating(Scale of 10)", '_help -> "")
+        
+        </fieldset>
+        
+        <div class="actions">
+            <input type="submit" value="Submit Feedback! " class="btn primary"> or 
+            <a href="@routes.Application.list()" class="btn">Cancel</a> 
+        </div>
+        
+    }
+    
+}

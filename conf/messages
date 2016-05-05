@@ -1,0 +1,5 @@
+# Messages
+
+computers.list.title={0,choice,0#No providers|1#One provider|1<{0,number,integer} providers} found
+
+

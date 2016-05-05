@@ -1,0 +1,454 @@
+New log file opened at Wed May 04 19:16:45 MST 2016 by 15076@vivek-Lenovo-IdeaPad-Y480
+jvm 15076@vivek-Lenovo-IdeaPad-Y480
+jvm vmName=Java HotSpot(TM) Server VM vmVendor=Oracle Corporation vmVersion=25.77-b03
+jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
+jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
+Starting event engine
+Starting sbt command engine
+Waiting for sbt command engine
+Command engine arguments=List()
+Command engine baseDirectory=/home/HelpPortal
+Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
+> --initialize
+> initialize
+> onFailure load-failed
+> boot
+> reload
+[Loading] Scanning directory /home/HelpPortal/project
+[Loading] Found non-root projects 
+[Loading] Done in /home/HelpPortal/project, returning: ()
+deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.JUnitXmlReportPlugin)
+sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin) not found List(sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin) not found List(sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+[Loading] Done in /home/HelpPortal/project, returning: (helpportal-build)
+Loading project definition from /home/HelpPortal/project
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@942460, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+[Loading] Scanning directory /home/HelpPortal
+[Loading] Found root project root w/ remaining 
+deducing auto plugins based on known facts Set(Atom(play.PlayJava), Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.BackgroundRunPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(play.Play),Set(Atom(com.typesafe.sbt.webdriver.SbtWebDriver))), Clause(Atom(play.Play),Set(Atom(play.twirl.sbt.SbtTwirl))), Clause(Atom(play.Play),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(play.PlayJava),Set(Atom(play.Play))), Clause(Atom(play.PlayScala),Set(Atom(play.Play))), Clause(Atom(play.twirl.sbt.SbtTwirl),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine))), Clause(Atom(com.typesafe.sbt.webdriver.SbtWebDriver),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(com.typesafe.sbt.coffeescript.SbtCoffeeScript),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.less.SbtLess),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.jshint.SbtJSHint),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.rjs.SbtRjs),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.digest.SbtDigest),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(com.typesafe.sbt.gzip.SbtGzip),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(com.typesafe.sbt.mocha.SbtMocha),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(play.Play))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(sbt.plugins.SerializersPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.InteractionServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SendEventServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SerializersPlugin))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine))), Clause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.webdriver.SbtWebDriver))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.coffeescript.SbtCoffeeScript))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.less.SbtLess))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jshint.SbtJSHint))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.rjs.SbtRjs))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.digest.SbtDigest))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.gzip.SbtGzip))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.mocha.SbtMocha))), Clause(And(Set(Atom(sbt.plugins.BackgroundRunPlugin), Atom(play.Play), Atom(sbt.plugins.SerializersPlugin))),Set(Atom(play.sbt.forkrun.PlayForkRun)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,play.PlayJava,sbt.plugins.InteractionServicePlugin,sbt.plugins.SendEventServicePlugin,play.Play,sbt.plugins.SerializersPlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,com.typesafe.sbt.jse.SbtJsTask,play.twirl.sbt.SbtTwirl,com.typesafe.sbt.webdriver.SbtWebDriver,com.typesafe.sbt.jshint.SbtJSHint,sbt.plugins.JUnitXmlReportPlugin,com.typesafe.sbt.mocha.SbtMocha,com.typesafe.sbt.less.SbtLess,com.typesafe.sbt.web.SbtWeb,com.typesafe.sbt.rjs.SbtRjs,com.typesafe.sbt.jse.SbtJsEngine,com.typesafe.sbt.coffeescript.SbtCoffeeScript,sbt.plugins.BackgroundRunPlugin,play.sbt.forkrun.PlayForkRun,com.typesafe.sbt.gzip.SbtGzip,com.typesafe.sbt.digest.SbtDigest)
+sorting: ns: List(sbt.plugins.CorePlugin, play.PlayJava, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, play.Play, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.jse.SbtJsTask, play.twirl.sbt.SbtTwirl, com.typesafe.sbt.webdriver.SbtWebDriver, com.typesafe.sbt.jshint.SbtJSHint, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, play.sbt.forkrun.PlayForkRun, com.typesafe.sbt.gzip.SbtGzip, com.typesafe.sbt.digest.SbtDigest)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.web.SbtWeb) not found List(play.PlayJava, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, play.Play, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.jse.SbtJsTask, play.twirl.sbt.SbtTwirl, com.typesafe.sbt.webdriver.SbtWebDriver, com.typesafe.sbt.jshint.SbtJSHint, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, play.sbt.forkrun.PlayForkRun, com.typesafe.sbt.gzip.SbtGzip, com.typesafe.sbt.digest.SbtDigest)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.web.SbtWeb, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.webdriver.SbtWebDriver, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.gzip.SbtGzip, com.typesafe.sbt.digest.SbtDigest) not found List(play.PlayJava, play.Play, sbt.plugins.JvmPlugin, com.typesafe.sbt.jse.SbtJsTask, play.twirl.sbt.SbtTwirl, com.typesafe.sbt.jshint.SbtJSHint, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, play.sbt.forkrun.PlayForkRun)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.web.SbtWeb, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.webdriver.SbtWebDriver, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.gzip.SbtGzip, com.typesafe.sbt.digest.SbtDigest, sbt.plugins.JvmPlugin, com.typesafe.sbt.jse.SbtJsTask) not found List(play.PlayJava, play.Play, play.twirl.sbt.SbtTwirl, com.typesafe.sbt.jshint.SbtJSHint, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, play.sbt.forkrun.PlayForkRun)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.web.SbtWeb, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.webdriver.SbtWebDriver, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.gzip.SbtGzip, com.typesafe.sbt.digest.SbtDigest, sbt.plugins.JvmPlugin, com.typesafe.sbt.jse.SbtJsTask, play.twirl.sbt.SbtTwirl, com.typesafe.sbt.jshint.SbtJSHint, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin) not found List(play.PlayJava, play.Play, play.sbt.forkrun.PlayForkRun)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.web.SbtWeb, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.webdriver.SbtWebDriver, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.gzip.SbtGzip, com.typesafe.sbt.digest.SbtDigest, sbt.plugins.JvmPlugin, com.typesafe.sbt.jse.SbtJsTask, play.twirl.sbt.SbtTwirl, com.typesafe.sbt.jshint.SbtJSHint, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, play.Play) not found List(play.PlayJava, play.sbt.forkrun.PlayForkRun)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.web.SbtWeb, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.webdriver.SbtWebDriver, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.gzip.SbtGzip, com.typesafe.sbt.digest.SbtDigest, sbt.plugins.JvmPlugin, com.typesafe.sbt.jse.SbtJsTask, play.twirl.sbt.SbtTwirl, com.typesafe.sbt.jshint.SbtJSHint, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, play.Play, play.PlayJava, play.sbt.forkrun.PlayForkRun) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, com.typesafe.sbt.web.SbtWeb, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.webdriver.SbtWebDriver, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.gzip.SbtGzip, com.typesafe.sbt.digest.SbtDigest, sbt.plugins.JvmPlugin, com.typesafe.sbt.jse.SbtJsTask, play.twirl.sbt.SbtTwirl, com.typesafe.sbt.jshint.SbtJSHint, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, play.Play, play.PlayJava, play.sbt.forkrun.PlayForkRun)
+[Loading] Done in /home/HelpPortal, returning: (root)
+Set current project to computer-database-java (in build file:/home/HelpPortal/)
+Reapplying settings...
+Set current project to computer-database-java (in build file:/home/HelpPortal/)
+> iflast shell
+> server-send-ready-for-request
+> server-handle-next-server-request
+> {file:/home/HelpPortal/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@44d340, check cycles: false
+Total time: 0 s, completed May 4, 2016 7:16:50 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/HelpPortal/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@1af926b, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed May 4, 2016 7:16:50 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/HelpPortal/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@148c21, check cycles: false
+Total time: 0 s, completed May 4, 2016 7:16:50 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/HelpPortal/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@b07ac9, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed May 4, 2016 7:16:51 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@12b8d6b, check cycles: false
+Total time: 0 s, completed May 4, 2016 7:19:19 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/HelpPortal/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@c97c68, check cycles: false
+Total time: 1 s, completed May 4, 2016 7:19:22 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@5f8b2f, check cycles: false
+Total time: 0 s, completed May 4, 2016 7:19:22 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@12235b5, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/HelpPortal/app/controllers/Application.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/HelpPortal/app/controllers/Application.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/HelpPortal/app/controllers/Application.java)
+
+Read from stdout: Compiling 1 Java source to /home/HelpPortal/target/scala-2.11/classes...
+Compiling 1 Java source to /home/HelpPortal/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@c956b4 directly...
+Java compilation took 0.695744312 s
+Java analysis took 0.207794787 s
+Java compile + analysis took 0.910621189 s
+Invalidating /home/HelpPortal/app/controllers/Application.java...
+Invalidating (transitively) by inheritance from /home/HelpPortal/app/controllers/Application.java...
+Initial set of included nodes: Set(/home/HelpPortal/app/controllers/Application.java)
+Invalidated by transitive inheritance dependency: Set(/home/HelpPortal/app/controllers/Application.java)
+The /home/HelpPortal/app/controllers/Application.java source file has the following regular definitions changed:
+	delete.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /home/HelpPortal/app/controllers/Application.java
+The following modified names cause invalidation of /home/HelpPortal/target/scala-2.11/src_managed/main/routes_routing.scala: Set(delete)
+The following modified names cause invalidation of /home/HelpPortal/target/scala-2.11/src_managed/main/routes_reverseRouting.scala: Set(delete)
+New invalidations:
+	Set(/home/HelpPortal/target/scala-2.11/src_managed/main/routes_routing.scala, /home/HelpPortal/target/scala-2.11/src_managed/main/routes_reverseRouting.scala)
+Initial set of included nodes: Set(/home/HelpPortal/target/scala-2.11/src_managed/main/routes_routing.scala, /home/HelpPortal/target/scala-2.11/src_managed/main/routes_reverseRouting.scala)
+Including /home/HelpPortal/target/scala-2.11/src_managed/main/routes_reverseRouting.scala by /home/HelpPortal/target/scala-2.11/src_managed/main/routes_routing.scala
+Including /home/HelpPortal/target/scala-2.11/twirl/main/views/html/editForm.template.scala by /home/HelpPortal/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /home/HelpPortal/app/controllers/Application.java by /home/HelpPortal/target/scala-2.11/twirl/main/views/html/editForm.template.scala
+Including /home/HelpPortal/target/scala-2.11/src_managed/main/controllers/routes.java by /home/HelpPortal/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /home/HelpPortal/target/scala-2.11/twirl/main/views/html/list.template.scala by /home/HelpPortal/target/scala-2.11/src_managed/main/controllers/routes.java
+Including /home/HelpPortal/target/scala-2.11/twirl/main/views/html/main.template.scala by /home/HelpPortal/target/scala-2.11/src_managed/main/controllers/routes.java
+Including /home/HelpPortal/target/scala-2.11/twirl/main/views/html/createForm.template.scala by /home/HelpPortal/target/scala-2.11/twirl/main/views/html/main.template.scala
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set(/home/HelpPortal/app/controllers/Application.java)
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(/home/HelpPortal/target/scala-2.11/src_managed/main/routes_routing.scala, /home/HelpPortal/target/scala-2.11/src_managed/main/routes_reverseRouting.scala)
+Read from stdout: Compiling 2 Scala sources and 1 Java source to /home/HelpPortal/target/scala-2.11/classes...
+Compiling 2 Scala sources and 1 Java source to /home/HelpPortal/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.4
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.4
+Other repositories:
+Default repositories:
+Running cached compiler 7c27c, interfacing (CompilerInterface) with Scala compiler version 2.11.4
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/opt/java/32/jdk1.8.0_77/jre/lib/resources.jar:/opt/java/32/jdk1.8.0_77/jre/lib/rt.jar:/opt/java/32/jdk1.8.0_77/jre/lib/sunrsasign.jar:/opt/java/32/jdk1.8.0_77/jre/lib/jsse.jar:/opt/java/32/jdk1.8.0_77/jre/lib/jce.jar:/opt/java/32/jdk1.8.0_77/jre/lib/charsets.jar:/opt/java/32/jdk1.8.0_77/jre/lib/jfr.jar:/opt/java/32/jdk1.8.0_77/jre/classes:/root/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.4.jar
+	-classpath
+	/home/HelpPortal/target/scala-2.11/classes:/root/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/root/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/root/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/root/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.10.jar:/root/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.10.jar:/root/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.10.jar:/root/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.10.jar:/root/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/root/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/root/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.10.jar:/root/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.10.jar:/root/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.10.jar:/root/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/root/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/root/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/root/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/root/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/root/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/root/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/root/.ivy2/cache/io.netty/netty/bundles/netty-3.9.9.Final.jar:/root/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/root/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/root/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/root/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/root/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/root/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/root/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/root/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/root/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/root/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/root/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/root/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/root/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.10.jar:/root/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/root/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/root/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/root/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/root/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/root/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/root/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/root/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/root/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/root/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/root/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/root/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/root/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/root/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/root/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.3.10.jar:/root/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/root/.ivy2/cache/com.h2database/h2/jars/h2-1.3.175.jar:/root/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/root/.ivy2/cache/com.typesafe.play/play-java-ebean_2.11/jars/play-java-ebean_2.11-2.3.10.jar:/root/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.3.10.jar:/root/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.3.4.jar:/root/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.2.jar:/root/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar:/root/.ivy2/cache/org.webjars/jquery/jars/jquery-2.1.1.jar:/root/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.1.jar
+Read from stdout: /home/HelpPortal/conf/routes:20: value delete is not a member of object controllers.Application
+/home/HelpPortal/conf/routes:20: value delete is not a member of object controllers.Application
+Read from stdout: POST    /computers/:id/delete       controllers.Application.delete(id:Long)
+POST    /computers/:id/delete       controllers.Application.delete(id:Long)
+Read from stdout: /home/HelpPortal/conf/routes:20: value delete is not a member of object controllers.Application
+/home/HelpPortal/conf/routes:20: value delete is not a member of object controllers.Application
+Read from stdout: POST    /computers/:id/delete       controllers.Application.delete(id:Long)
+POST    /computers/:id/delete       controllers.Application.delete(id:Long)
+Read from stdout: two errors found
+two errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 6 s, completed May 4, 2016 7:23:48 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1bb06d1, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/HelpPortal/app/controllers/Application.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/HelpPortal/app/controllers/Application.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/HelpPortal/app/controllers/Application.java)
+
+Read from stdout: Compiling 1 Java source to /home/HelpPortal/target/scala-2.11/classes...
+Compiling 1 Java source to /home/HelpPortal/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@131d467 directly...
+Java compilation took 0.201228446 s
+Java analysis took 0.100515779 s
+Java compile + analysis took 0.313772446 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 4, 2016 7:24:10 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1237365, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/HelpPortal/app/controllers/Application.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/HelpPortal/app/controllers/Application.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/HelpPortal/app/controllers/Application.java)
+
+Read from stdout: Compiling 1 Java source to /home/HelpPortal/target/scala-2.11/classes...
+Compiling 1 Java source to /home/HelpPortal/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@1de171f directly...
+Java compilation took 0.16498924 s
+Java analysis took 0.090152243 s
+Java compile + analysis took 0.260621883 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 4, 2016 7:24:35 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@8f6c8e, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/HelpPortal/app/controllers/Application.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/HelpPortal/app/controllers/Application.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/HelpPortal/app/controllers/Application.java)
+
+Read from stdout: Compiling 1 Java source to /home/HelpPortal/target/scala-2.11/classes...
+Compiling 1 Java source to /home/HelpPortal/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@1293acf directly...
+Java compilation took 0.104037587 s
+Java analysis took 0.069082418 s
+Java compile + analysis took 0.233483236 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 4, 2016 7:24:48 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@3b4863, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/HelpPortal/app/controllers/Application.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/HelpPortal/app/controllers/Application.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/HelpPortal/app/controllers/Application.java)
+
+Read from stdout: Compiling 1 Java source to /home/HelpPortal/target/scala-2.11/classes...
+Compiling 1 Java source to /home/HelpPortal/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@19066e1 directly...
+Java compilation took 0.097563925 s
+Java analysis took 0.057648445 s
+Java compile + analysis took 0.159213059 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 0 s, completed May 4, 2016 7:24:52 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1a17591, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/home/HelpPortal/app/models/Provider.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/home/HelpPortal/app/models/Provider.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/home/HelpPortal/app/models/Provider.java)
+
+Read from stdout: Compiling 1 Java source to /home/HelpPortal/target/scala-2.11/classes...
+Compiling 1 Java source to /home/HelpPortal/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@12386b9 directly...
+Java compilation took 0.064522047 s
+Java analysis took 0.043090333 s
+Java compile + analysis took 0.113940991 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 0 s, completed May 4, 2016 7:30:00 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/HelpPortal/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@6345ee, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/home/HelpPortal/conf/application.conf,/home/HelpPortal/target/scala-2.11/classes/application.conf)
+	(/home/HelpPortal/conf/routes,/home/HelpPortal/target/scala-2.11/classes/routes)
+	(/home/HelpPortal/conf/messages,/home/HelpPortal/target/scala-2.11/classes/messages)
+	(/home/HelpPortal/conf/evolutions,/home/HelpPortal/target/scala-2.11/classes/evolutions)
+	(/home/HelpPortal/conf/evolutions/default,/home/HelpPortal/target/scala-2.11/classes/evolutions/default)
+	(/home/HelpPortal/conf/evolutions/default/2.sql,/home/HelpPortal/target/scala-2.11/classes/evolutions/default/2.sql)
+	(/home/HelpPortal/conf/evolutions/default/1.sql,/home/HelpPortal/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 1 s, completed May 4, 2016 7:45:11 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/HelpPortal/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@13cf061, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/home/HelpPortal/conf/application.conf,/home/HelpPortal/target/scala-2.11/classes/application.conf)
+	(/home/HelpPortal/conf/routes,/home/HelpPortal/target/scala-2.11/classes/routes)
+	(/home/HelpPortal/conf/messages,/home/HelpPortal/target/scala-2.11/classes/messages)
+	(/home/HelpPortal/conf/evolutions,/home/HelpPortal/target/scala-2.11/classes/evolutions)
+	(/home/HelpPortal/conf/evolutions/default,/home/HelpPortal/target/scala-2.11/classes/evolutions/default)
+	(/home/HelpPortal/conf/evolutions/default/2.sql,/home/HelpPortal/target/scala-2.11/classes/evolutions/default/2.sql)
+	(/home/HelpPortal/conf/evolutions/default/1.sql,/home/HelpPortal/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 0 s, completed May 4, 2016 7:45:15 PM
+> server-post-command-cleanup
+> server-handle-next-server-request

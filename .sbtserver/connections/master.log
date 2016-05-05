@@ -1,0 +1,64 @@
+New log file opened at Wed May 04 19:16:45 MST 2016 by 15076@vivek-Lenovo-IdeaPad-Y480
+Taking next connection to: 50841
+New client attempting to connect on port: 42516-50841
+  Address = /127.0.1.1:50841
+This client on port 42516 has uuid 8b62bf92-b2b7-4109-9bd6-f18e8e911c86 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-8b62bf92-b2b7-4109-9bd6-f18e8e911c86
+Taking next connection to: 50841
+New client attempting to connect on port: 42531-50841
+  Address = /127.0.1.1:50841
+Handshake exception on socket: 42531
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 50841
+New client attempting to connect on port: 42532-50841
+  Address = /127.0.1.1:50841
+This client on port 42532 has uuid f7c1cd35-1e08-45f2-8eb4-66e8f1e2aff4 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-8b62bf92-b2b7-4109-9bd6-f18e8e911c86, play-fork-run-f7c1cd35-1e08-45f2-8eb4-66e8f1e2aff4
+Taking next connection to: 50841
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50841
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50841
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50841
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50841
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50841
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50841
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50841
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50841
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50841
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50841
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50841
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50841
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50841

@@ -1,0 +1,30 @@
+@(computerForm: Form[Provider])
+
+@import helper._
+
+@implicitFieldConstructor = @{ FieldConstructor(twitterBootstrapInput.render) } 
+
+@main {
+    
+    <h1>Register a Provider</h1>
+    
+    @form(routes.Application.save()) {
+        
+        <fieldset>
+        
+            @inputText(computerForm("fullname"), '_label -> "Provider name(Enter full name)", '_help -> "")
+            @inputText(computerForm("tech"), '_label -> "Technology", '_help -> "")
+            @inputText(computerForm("email"), '_label -> "Contact Email Address", '_help -> "")
+            @inputText(computerForm("experience"), '_label -> "Years of Experience", '_help -> "")
+
+
+        </fieldset>
+        
+        <div class="actions">
+            <input type="submit" value="Register" class="btn primary"> or 
+            <a href="@routes.Application.list()" class="btn">Cancel</a> 
+        </div>
+        
+    }
+    
+}
